@@ -6,5 +6,7 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 500;
 `
