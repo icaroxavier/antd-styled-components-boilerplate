@@ -10,7 +10,14 @@ export default function HomePage() {
     <Main>
       Boilerplate with antd & styled-components
       <Space>
-        <Button type="primary" onClick={() => router.push('/')}>
+        <Button
+          type="primary"
+          onClick={() =>
+            router.push(
+              'https://github.com/icaroxavier/antd-style-components-boilerplate',
+            )
+          }
+        >
           Boilerplate
         </Button>
         <Button onClick={() => router.push('https://ant.design/')}>antd</Button>
