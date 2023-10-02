@@ -5,9 +5,9 @@ export function getAntdTheme(theme: CustomThemeType): ThemeConfig {
   const antdTheme: ThemeConfig = {
     token: {
       colorPrimary: theme.colors.primary,
-      colorText: theme.colors.primary,
-      colorTextPlaceholder: theme.colors.secondary,
-      colorBorder: theme.colors.secondary,
+      colorText: theme.colors.text,
+      colorTextPlaceholder: theme.colors.textLighter,
+      colorBorder: theme.colors.textLighter,
       fontFamily: "'Roboto', sans-serif",
     },
   }
