@@ -1,3 +1,4 @@
+import { Input } from 'antd'
 import styled from 'styled-components'
 
 export const Main = styled.main`
@@ -6,7 +7,11 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   font-size: 2rem;
   font-weight: 500;
+`
+
+export const CustomInput = styled(Input)`
+  max-width: 200px;
 `
