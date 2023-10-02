@@ -13,7 +13,7 @@ export default function HomePage() {
           type="primary"
           onClick={() =>
             router.push(
-              'https://github.com/icaroxavier/antd-style-components-boilerplate',
+              'https://github.com/icaroxavier/antd-styled-components-boilerplate',
             )
           }
         >
