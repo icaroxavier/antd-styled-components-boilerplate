@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Input, Space } from 'antd'
+import { Button, Space, Typography } from 'antd'
 import { CustomInput, Main } from './page.styles'
 import { useRouter } from 'next/navigation'
 
@@ -8,7 +8,6 @@ export default function HomePage() {
   const router = useRouter()
   return (
     <Main>
-      Boilerplate with antd & styled-components
       <Space>
         <Button
           type="primary"
@@ -25,6 +24,7 @@ export default function HomePage() {
           styled-components
         </Button>
       </Space>
+      <Typography>Boilerplate with antd & styled-components</Typography>
       <CustomInput placeholder="Type anything here..." />
     </Main>
   )
