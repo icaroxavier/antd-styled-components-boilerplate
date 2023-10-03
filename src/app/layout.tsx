@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import { AntdConfigProvider } from '@/lib/AntdConfigProvider'
 import AntdRegistry from '@/lib/AntdRegistry'
+import { ReactQueryProvider } from '@/lib/ReactQueryProvider'
 import StyledComponentsRegistry from '@/lib/StyledComponentsRegistry'
 import { StyledComponentsThemeProvider } from '@/lib/StyledComponentsThemeProvider'
 import type { Metadata } from 'next'
@@ -32,9 +33,11 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>
           <AntdRegistry>
-            <StyledComponentsThemeProvider>
-              <AntdConfigProvider>{children}</AntdConfigProvider>
-            </StyledComponentsThemeProvider>
+            <ReactQueryProvider>
+              <StyledComponentsThemeProvider>
+                <AntdConfigProvider>{children}</AntdConfigProvider>
+              </StyledComponentsThemeProvider>
+            </ReactQueryProvider>
           </AntdRegistry>
         </StyledComponentsRegistry>
       </body>
